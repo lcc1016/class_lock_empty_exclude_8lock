@@ -647,7 +647,7 @@ function renderCell(cell, mode, day, period, currentClassName = '') {
 
     if (cell.isLocked) {
         if (period === 8) {
-            lockBadge = `<span class="lock-tag lock-tag-p8" title="此為第8節獨立綁課，不可調課">🔒 8節綁課</span>`;
+            lockBadge = `<span class="lock-tag lock-tag-p8" title="此為第8節獨立綁課，不可調課">🔒綁課</span>`;
             cellClass = 'td-cell cell-locked-p8';
         } else {
             lockBadge = `<span class="lock-tag" title="此課程已綁定，不可調課">🔒 綁課</span>`;
