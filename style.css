@@ -899,3 +899,18 @@ tr.period-8-row {
   color: #0a367c;
   transform: translateY(-1px);
 }
+/* 📱 手機版專用間距微調 (螢幕寬度 768px 以下套用) */
+@media (max-width: 768px) {
+  /* 假設年級區塊的外層容器 class 為 .grade-group 或 .form-group */
+  .grade-group, 
+  .form-group,
+  .form-select {
+    margin-bottom: 8px !important; /* 將原本較大的間距縮小至 8px (可依需求調整為 6px~10px) */
+  }
+
+  /* 若年級標籤（七年級、八年級...）下方也有間距，可一併縮小 */
+  .grade-badge,
+  .form-label {
+    margin-bottom: 4px !important;
+  }
+}
