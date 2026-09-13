@@ -51,39 +51,18 @@
         <div class="loading-text">資料載入中，請稍候...</div>
     </div>
 
-<!-- ══ 1. 登入視圖 ══════════════════════════════════════════ -->
-<div id="loginView" class="view-container active">
-    <!-- 白框卡片區 -->
-    <div class="login-card">
-        <div class="login-header">
-            <img src="logo.png" alt="校徽" class="school-logo">
-            <div class="title-group">
-                <h1 class="system-title">民雄國中<br>課表查詢系統</h1>
-                <p class="system-subtitle">請選擇學期並登入查詢</p>
-            </div>
-        </div>
-
-        <form id="loginForm">
-            <div class="form-group">
-                <label for="semesterSelect">學期選擇</label>
-                <select id="semesterSelect" class="form-control">
-                    <!-- 由 JS 動態填入 -->
-                </select>
-            </div>
-
-            <div id="loginError" class="error-msg"></div>
-
-            <button type="submit" id="loginBtn" class="btn btn-primary">
-                <span id="loginSpinner" class="btn-spinner"></span>
-                進入系統
-            </button>
-        </form>
-    </div>
-
-    <!-- 頁尾計數器（放在卡片外、登入視圖內的最下方） -->
+<!-- 頁尾計數器與回饋按鈕（放在卡片外、登入視圖內的最下方） -->
     <footer class="app-footer">
-        <div class="visitor-box">
-            👀 累積瀏覽人次：<span id="visitorCount">0</span>
+        <div class="footer-bar">
+            <!-- 左側：累積瀏覽人次膠囊 -->
+            <div class="visitor-box">
+                👀 累積瀏覽人次：<span id="visitorCount">0</span>
+            </div>
+
+            <!-- 右側：回饋與建議按鈕 -->
+            <a href="https://forms.gle/wHm7gkpCEearwkLK6" target="_blank" class="feedback-btn">
+                💬 回饋與建議
+            </a>
         </div>
     </footer>
 </div>
