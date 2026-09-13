@@ -934,3 +934,20 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.addEventListener('click', closeSubModal);
     }
 });
+// 開啟獨立圖片新視窗
+function openImageWindow(imgUrl) {
+    // 設定新視窗的寬度與高度
+    const width = 900;
+    const height = 700;
+    
+    // 計算讓視窗居中顯示的位置
+    const left = (window.screen.width - width) / 2;
+    const top = (window.screen.height - height) / 2;
+    
+    // 開啟獨立視窗
+    window.open(
+        imgUrl, 
+        'P8ImageWindow', 
+        `width=${width},height=${height},top=${top},left=${left},resizable=yes,scrollbars=yes,status=no,toolbar=no,menubar=no`
+    );
+}
